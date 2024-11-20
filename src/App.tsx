@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PortfolioGrid from './components/PortfolioGrid';
+import Illustrations from './pages/Illustrations';
+import Inspirations from './pages/Inspirations';
+import HorizonBlue from './pages/HorizonBlue';
+import Ownphones from './pages/Ownphones';
+import Vodka from './pages/Vodka';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<PortfolioGrid />} />
+        <Route path="/illustrations" element={<Illustrations />} />
+        <Route path="/inspirations" element={<Inspirations />} />
+        <Route path="/horizon-blue" element={<HorizonBlue />} />
+        <Route path="/ownphones" element={<Ownphones />} />
+        <Route path="/vodka" element={<Vodka />} />
+      </Routes>
+    </Router>
   );
 }
 
