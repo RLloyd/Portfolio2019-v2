@@ -54,8 +54,8 @@ export interface Project {
        }
      ]
    },
-   'horizon-blue': {
-     id: 'horizon-blue',
+   'horizonBlue': {
+     id: 'horizonBlue',
      title: 'Horizon Blue Healthcare',
      image: '/images/horizon.jpg',
      description: 'Healthcare web solutions',

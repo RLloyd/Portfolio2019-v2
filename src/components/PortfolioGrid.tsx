@@ -7,7 +7,7 @@ import { PortfolioCard as PortfolioCardType } from '../types';
 const cardPositions: Record<string, { top: number; left: number }> = {
   illustrations: { top: 50, left: 50 },
   inspirations: { top: 50, left: 400 },
-  'horizon-blue': { top: 50, left: 750 },
+  horizonBlue: { top: 50, left: 750 },
   ownphones: { top: 500, left: 400 },
   vodka: { top: 500, left: 750 }
 };
